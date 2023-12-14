@@ -1,6 +1,6 @@
 import cx from "clsx";
 import { useState } from "react";
-import { Table, ScrollArea } from "@mantine/core";
+import { Table, ScrollArea, Text } from "@mantine/core";
 import classes from "./TableScrollArea.module.css";
 
 const data = [
@@ -9,11 +9,11 @@ const data = [
     price: "$11",
   },
   {
-    service: "Shorten Pants w/ Lining Hem",
+    service: "Shorten Pants Hem w/ Lining",
     price: "$13",
   },
   {
-    service: "Shorten Jeans Heam",
+    service: "Shorten Jeans Hem",
     price: "$12",
   },
   {
@@ -60,6 +60,12 @@ export function TableScrollArea() {
         </Table.Thead>
         <Table.Tbody>{rows}</Table.Tbody>
       </Table>
+      <div className={classes.information}>
+        <Text size={"sm"}>
+          For additional information and services, please don't hesitate to get
+          in touch with us, or feel free to visit our store in person.
+        </Text>
+      </div>
     </ScrollArea>
   );
 }

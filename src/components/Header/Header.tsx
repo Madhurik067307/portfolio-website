@@ -15,7 +15,7 @@ import cx from "clsx";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { IconMessageCircle, IconSettings } from "@tabler/icons-react";
-import { MenuDemo } from "../Menu/Menu";
+import { HeaderMenu } from "../Menu/HeaderMenu";
 
 const links = [
   { link: "/", label: "Home" },
@@ -74,7 +74,7 @@ export function Header() {
           </Group>
 
           {/* <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" /> */}
-          <MenuDemo />
+          <HeaderMenu />
         </Container>
       </header>
     </MantineProvider>

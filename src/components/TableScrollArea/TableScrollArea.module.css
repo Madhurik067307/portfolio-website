@@ -20,6 +20,11 @@
   box-shadow: var(--mantine-shadow-sm);
 }
 
+.information {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
 @media only screen and (min-width: 600px) {
   .row {
     font-size: 15px;
@@ -27,6 +32,10 @@
 
   .rowTitle {
     font-size: 18px;
+  }
+
+  .information {
+    width: 100%;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */

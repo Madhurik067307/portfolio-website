@@ -6,9 +6,9 @@ import {
   IconNeedleThread,
 } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
-import classes from "./Menu.module.css";
+import classes from "./HeaderMenu.module.css";
 
-export function MenuDemo() {
+export function HeaderMenu() {
   const router = useRouter();
   const [opened, { toggle }] = useDisclosure(false);
 
@@ -37,7 +37,7 @@ export function MenuDemo() {
 
       <Menu.Dropdown className={classes.menuDropdown}>
         {options.map((option) => (
-          <>
+          <div key={option.title}>
             <Menu.Item
               onClick={() => router.push(option.link)}
               leftSection={<option.icon className={classes.icon} />}
@@ -47,7 +47,7 @@ export function MenuDemo() {
               </Text>
             </Menu.Item>
             <Menu.Divider />
-          </>
+          </div>
         ))}
       </Menu.Dropdown>
     </Menu>
