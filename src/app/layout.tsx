@@ -5,8 +5,8 @@ import "@mantine/core/styles.layer.css";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 
 export const metadata = {
-  title: "My Mantine app",
-  description: "I have followed setup instructions carefully",
+  title: "NC Tailor Experts",
+  description: "North Carolina Tailor Experts",
 };
 
 export default function RootLayout({

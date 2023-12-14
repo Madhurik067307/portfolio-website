@@ -11,7 +11,6 @@ import {
 } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
-// import image from '../../assets/images/image.svg';
 import femaleTailor from "../../assets/images/female-tailor.png";
 import classes from "./HeroBullets.module.css";
 

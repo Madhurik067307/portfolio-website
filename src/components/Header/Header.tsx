@@ -6,12 +6,16 @@ import {
   Title,
   createTheme,
   MantineProvider,
+  Menu,
+  Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./Header.module.css";
 import cx from "clsx";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
+import { IconMessageCircle, IconSettings } from "@tabler/icons-react";
+import { MenuDemo } from "../Menu/Menu";
 
 const links = [
   { link: "/", label: "Home" },
@@ -36,6 +40,7 @@ export function Header() {
   const [active, setActive] = useState(
     pathname === "/" ? links[0].link : pathname
   );
+  const [menuOpened, setMenuOpened] = useState(false);
 
   const items = links.map((link) => (
     <a
@@ -60,13 +65,16 @@ export function Header() {
       <header className={classes.header}>
         <Container size="responsive" className={classes.inner}>
           <Link className={classes.titleLink} href="/">
-            <Title className={classes.title}>Tailor Experts</Title>
+            <Title className={classes.title}>
+              <Text fw={500}>Tailor Experts</Text>
+            </Title>
           </Link>
           <Group gap={5} visibleFrom="xs">
             {items}
           </Group>
 
-          <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+          {/* <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" /> */}
+          <MenuDemo />
         </Container>
       </header>
     </MantineProvider>
