@@ -4,16 +4,16 @@
   background-color: var(--mantine-color-body);
   transition: box-shadow 150ms ease;
   font-size: 20px;
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-bottom: rem(1px) solid
-      light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-3));
-  }
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: rem(1px) solid
+    light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-3));
 }
 
 .scrolled {
@@ -24,11 +24,19 @@
   .row {
     font-size: 15px;
   }
+
+  .rowTitle {
+    font-size: 18px;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .row {
     font-size: 15px;
+  }
+
+  .rowTitle {
+    font-size: 18px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -36,10 +44,18 @@
   .row {
     font-size: 25px;
   }
+
+  .rowTitle {
+    font-size: 30px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .row {
     font-size: 25px;
+  }
+
+  .rowTitle {
+    font-size: 30px;
   }
 }

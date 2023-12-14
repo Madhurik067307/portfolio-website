@@ -15,7 +15,6 @@ import Link from "next/link";
 
 const links = [
   { link: "/", label: "Home" },
-  { link: "/about", label: "About" },
   { link: "/services", label: "Services" },
   { link: "/contact", label: "Contact" },
 ];
@@ -42,7 +41,9 @@ export function Header() {
     <a
       key={link.label}
       href={link.link}
-      className={`classes.link ${active === link.link ? "active" : ""}`}
+      className={`${classes.link} ${
+        active === link.link ? classes.active : ""
+      }`}
       data-active={active === link.link || undefined}
       onClick={(event) => {
         event.preventDefault();

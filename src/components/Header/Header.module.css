@@ -2,8 +2,7 @@
   height: rem(56px);
   /* margin-bottom: rem(120px); */
   background-color: var(--mantine-color-body);
-  border-bottom: rem(1px) solid
-    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  border-bottom: 1px solid var(--mantine-color-gray-4);
 }
 
 .titleLink {
@@ -30,7 +29,7 @@
   padding: 8px 12px;
   border-radius: var(--mantine-radius-sm);
   text-decoration: none;
-  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  color: var(--mantine-color-gray-7), var(--mantine-color-dark-0);
   font-size: var(--mantine-font-size-sm);
   font-weight: 500;
 
