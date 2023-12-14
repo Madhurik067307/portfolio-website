@@ -50,6 +50,11 @@
   color: var(--mantine-color-white);
 }
 
+.active:hover {
+  background-color: var(--mantine-color-blue-filled) !important;
+  color: var(--mantine-color-white) !important;
+}
+
 .responsiveContainer {
   max-width: rem(300px);
 
