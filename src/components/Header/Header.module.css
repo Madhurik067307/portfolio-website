@@ -1,0 +1,95 @@
+.header {
+  height: rem(56px);
+  /* margin-bottom: rem(120px); */
+  background-color: var(--mantine-color-body);
+  border-bottom: rem(1px) solid
+    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.titleLink {
+  text-decoration: none;
+}
+
+.title {
+  font-size: var(--title-fz);
+  color: var(--mantine-color-gray-7);
+  cursor: pointer;
+}
+
+.inner {
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+
+  @mixin hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-6)
+    );
+  }
+
+  /* [data-mantine-color-scheme] .link[data-active] {
+    background-color: var(--mantine-color-blue-filled);
+    color: var(--mantine-color-white);
+  } */
+}
+
+.active {
+  background-color: var(--mantine-color-blue-filled);
+  color: var(--mantine-color-white);
+}
+
+.responsiveContainer {
+  max-width: rem(300px);
+
+  @media (min-width: em(400px)) {
+    max-width: rem(400px);
+  }
+
+  @media (min-width: em(600px)) {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: var(--mantine-font-size-sm);
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: var(--mantine-font-size-sm);
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: var(--mantine-font-size-md);
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title {
+    font-size: var(--mantine-font-size-lg);
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .title {
+    font-size: var(--mantine-font-size-lg);
+  }
+}

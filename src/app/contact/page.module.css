@@ -1,0 +1,36 @@
+.getInTouch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .getInTouch {
+    margin-top: rem(50px);
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .getInTouch {
+    margin-top: rem(50px);
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .getInTouch {
+    margin-top: rem(50px);
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .getInTouch {
+    margin-top: rem(120px);
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .getInTouch {
+    margin-top: rem(120px);
+  }
+}
