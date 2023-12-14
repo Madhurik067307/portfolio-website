@@ -62,8 +62,8 @@ export function TableScrollArea() {
       </Table>
       <div className={classes.information}>
         <Text size={"sm"}>
-          For additional information and services, please don't hesitate to get
-          in touch with us, or feel free to visit our store in person.
+          For additional information and services, please don&apos;t hesitate to
+          get in touch with us, or feel free to visit our store in person.
         </Text>
       </div>
     </ScrollArea>
