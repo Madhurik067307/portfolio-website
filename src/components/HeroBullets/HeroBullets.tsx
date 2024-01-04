@@ -71,7 +71,13 @@ export function HeroBullets() {
             </Button>
           </Group>
         </div>
-        <Image src={femaleTailor.src} className={classes.image} />
+        <Image
+          w={"auto"}
+          h="400"
+          fit="contain"
+          src={femaleTailor.src}
+          className={classes.image}
+        />
       </div>
     </Container>
   );
