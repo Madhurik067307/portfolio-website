@@ -5,15 +5,15 @@ import classes from "./TableScrollArea.module.css";
 
 const data = [
   {
-    service: "Shorten Pants Hem",
+    service: "Shorten Pants Hems",
     price: "$11",
   },
   {
-    service: "Shorten Pants Hem w/ Lining",
+    service: "Shorten Pants Hems w/ Lining",
     price: "$13",
   },
   {
-    service: "Shorten Jeans Hem",
+    service: "Shorten Jeans Hems",
     price: "$12",
   },
   {

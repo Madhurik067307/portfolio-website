@@ -25,10 +25,9 @@ export function HeroBullets() {
             Tailor with <span className={classes.highlight}>10+</span> <br />{" "}
             Years of Experience
           </Title>
-          {/* <Text c="dimmed" mt="md">
-            Build fully functional accessible web applications faster than ever – Mantine includes
-            more than 120 customizable components and hooks to cover you in any situation
-          </Text> */}
+          <Text c="dimmed" mt="md" size={"lg"}>
+            CUSTOM CLOTHING | ALTERATIONS
+          </Text>
 
           <List
             mt={30}
@@ -53,7 +52,7 @@ export function HeroBullets() {
             </List.Item>
             <List.Item>
               <b>Consultation & Styling</b> – Our expert stylists will guide you
-              through the design process, ensuring you look your best.
+              through the process, ensuring you look your best.
             </List.Item>
             <List.Item>
               <b>Local and Family-Owned</b> – A locally owned and

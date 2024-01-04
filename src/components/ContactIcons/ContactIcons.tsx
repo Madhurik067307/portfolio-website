@@ -33,7 +33,7 @@ function ContactIcon({
 
 const MOCKDATA = [
   { title: "Email", description: "hello@mantine.dev", icon: IconAt },
-  { title: "Phone", description: "+49 (800) 335 35 35", icon: IconPhone },
+  { title: "Phone", description: "(949) 303 9118", icon: IconPhone },
   {
     title: "Address",
     description: "5297 Sunset Lake Rd #3768",
@@ -47,9 +47,71 @@ const MOCKDATA = [
   },
 ];
 
+// export function ContactIconsList() {
+//   const items = MOCKDATA.map((item, index) => (
+//     <ContactIcon key={index} {...item} />
+//   ));
+//   return <Stack>{items}</Stack>;
+// }
+
 export function ContactIconsList() {
   const items = MOCKDATA.map((item, index) => (
     <ContactIcon key={index} {...item} />
   ));
-  return <Stack>{items}</Stack>;
+  return (
+    <Stack>
+      <div className={classes.wrapper}>
+        <Box mr="md">
+          <IconAt className={classes.icon} />
+        </Box>
+
+        <div>
+          <Text size="xs" className={classes.title}>
+            Email
+          </Text>
+          <Text className={classes.description}>hello@mantine.dev</Text>
+        </div>
+      </div>
+      <div className={classes.wrapper}>
+        <Box mr="md">
+          <IconPhone className={classes.icon} />
+        </Box>
+
+        <div>
+          <Text size="xs" className={classes.title}>
+            Phone
+          </Text>
+          <Text className={classes.description}>(949) 303 9118</Text>
+        </div>
+      </div>
+      <div className={classes.wrapper}>
+        <Box mr="md">
+          <IconMapPin className={classes.icon} />
+        </Box>
+
+        <div>
+          <Text size="xs" className={classes.title}>
+            Address
+          </Text>
+          <Text className={classes.description}>
+            5297 Sunset Lake Rd #3768, Holy Springs, NC 27540
+          </Text>
+        </div>
+      </div>
+      <div className={classes.wrapper}>
+        <Box mr="md">
+          <IconSun className={classes.icon} />
+        </Box>
+
+        <div>
+          <Text size="xs" className={classes.title}>
+            Working hours
+          </Text>
+          <Text className={classes.description}>Mon - Fri: 10 AM – 6 PM</Text>
+          <Text className={classes.description}>Sat: 10 AM - 4 PM</Text>
+          <Text className={classes.description}>Sunday: CLOSED</Text>
+        </div>
+      </div>
+    </Stack>
+  );
 }
