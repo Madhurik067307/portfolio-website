@@ -25,9 +25,9 @@ export function HeroBullets() {
             Tailor with <span className={classes.highlight}>25+</span> <br />{" "}
             Years of Experience
           </Title>
-          <Text c="dimmed" mt="md" size={"lg"}>
-            FORMAL DRESS &#38; SUIT ALTERATIONS
-          </Text>
+          {/* <Text c="dimmed" mt="md" size={"lg"}>
+            ALTERATIONS
+          </Text> */}
 
           <List
             mt={30}
