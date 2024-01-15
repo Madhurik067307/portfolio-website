@@ -22,11 +22,11 @@ export function HeroBullets() {
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
-            Tailor with <span className={classes.highlight}>10+</span> <br />{" "}
+            Tailor with <span className={classes.highlight}>25+</span> <br />{" "}
             Years of Experience
           </Title>
           <Text c="dimmed" mt="md" size={"lg"}>
-            CUSTOM CLOTHING | ALTERATIONS
+            FORMAL DRESS &#38; SUIT ALTERATIONS
           </Text>
 
           <List
@@ -43,16 +43,16 @@ export function HeroBullets() {
             }
           >
             <List.Item>
-              <b>Tailoring Excellence</b> – Crafting garments with precision and
-              passion for 10+ years.
+              <b>Tailoring Excellence</b> – Altering garments with precision and
+              passion.
             </List.Item>
             <List.Item>
               <b>Satisfaction Guaranteed</b> – We&apos;re dedicated to your
               satisfaction; your confidence in our work is our top priority.
             </List.Item>
             <List.Item>
-              <b>Consultation & Styling</b> – Our expert stylists will guide you
-              through the process, ensuring you look your best.
+              <b>Consultation &#38; Styling</b> – Our expert stylists will guide
+              you through the process, ensuring you look your best.
             </List.Item>
             <List.Item>
               <b>Local and Family-Owned</b> – A locally owned and

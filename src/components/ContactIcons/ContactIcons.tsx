@@ -69,7 +69,7 @@ export function ContactIconsList() {
           <Text size="xs" className={classes.title}>
             Email
           </Text>
-          <Text className={classes.description}>hello@mantine.dev</Text>
+          <Text className={classes.description}>quyentran823@yahoo.com</Text>
         </div>
       </div>
       <div className={classes.wrapper}>
