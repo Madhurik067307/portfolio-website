@@ -66,7 +66,7 @@ export function Header() {
         <Container size="responsive" className={classes.inner}>
           <Link className={classes.titleLink} href="/">
             <Title className={classes.title}>
-              <Text fw={500}>Tailor Experts</Text>
+              <Text fw={500}>NC Tailor Experts</Text>
             </Title>
           </Link>
           <Group gap={5} visibleFrom="xs">
