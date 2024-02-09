@@ -41,7 +41,7 @@ function Card({
 
         <div className={classes.skills}>
           {skills.map((skill) => (
-            <Button variant="light" radius="xl" size="sm">
+            <Button key={skill.id} variant="light" radius="xl" size="sm">
               {skill.name}
             </Button>
           ))}
