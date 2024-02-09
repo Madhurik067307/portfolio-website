@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.github_container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.github {
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-gray-5));
+}
+
+.github:hover {
+  text-decoration: underline;
+}
+
+.button_container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 100%;
+}
+
+.title_container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.divider {
+  margin-top: 2rem;
+  height: 1px;
+  width: 80%;
+  background-color: light-dark(
+    var(--mantine-color-gray-3),
+    var(--mantine-color-gray-6)
+  );
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.information_element {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}

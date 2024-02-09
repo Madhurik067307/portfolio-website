@@ -25,6 +25,10 @@
 
 .bottom_left {
   width: 30%;
+  height: 100vh;
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .bottom_right {
