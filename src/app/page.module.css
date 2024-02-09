@@ -35,14 +35,6 @@
   margin-top: 2rem;
 }
 
-.bottom_right_repo_title {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-}
-
-.bottom_right_repo {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
+.bottom_right_experience_container {
+  margin-top: 2rem;
 }

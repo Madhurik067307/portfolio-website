@@ -15,6 +15,11 @@ export default function Introduction() {
     developerTools: ": Git/GitHub, Postman, Azure, MongoDB.",
   };
 
+  const openInNewTab = (url: string) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.body}>
@@ -35,12 +40,16 @@ export default function Introduction() {
               style={{ width: "1.5rem", height: "1.5rem" }}
               stroke={1.5}
               color="var(--mantine-color-blue-filled)"
+              onClick={() =>
+                openInNewTab("https://www.linkedin.com/in/chuongtran2001/")
+              }
             />
             <IconMail
               className={classes.icon}
               style={{ width: "1.5rem", height: "1.5rem" }}
               stroke={1.5}
               color="var(--mantine-color-blue-filled)"
+              onClick={() => openInNewTab("mailto:chuongtran2001@gmail.com")}
             />
           </div>
         </div>

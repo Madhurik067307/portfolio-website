@@ -41,7 +41,7 @@ export default function PersonalInformation() {
           size="md"
           variant="default"
         >
-          Get Resume
+          View Resume
         </Button>
       </div>
 

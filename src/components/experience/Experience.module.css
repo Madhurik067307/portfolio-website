@@ -1,0 +1,66 @@
+.card {
+  height: rem(450px);
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  border: 0.5px solid
+    light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left_text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  line-height: 1.2;
+  font-size: rem(32px);
+  margin-top: var(--mantine-spacing-xs);
+}
+
+.carousel_container {
+  margin-top: 2rem;
+}
+
+.category {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  opacity: 0.7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mantine-Carousel-indicator {
+  background-color: white !important;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.carousel_title {
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

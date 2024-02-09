@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@mantine/carousel": "^7.5.2",
     "@mantine/code-highlight": "^7.3.1",
     "@mantine/core": "^7.3.1",
     "@mantine/dates": "^7.3.1",
@@ -19,7 +20,7 @@
     "@mantine/notifications": "^7.3.1",
     "@tabler/icons-react": "^2.44.0",
     "dayjs": "^1.11.10",
-    "embla-carousel-react": "^8.0.0-rc15",
+    "embla-carousel-react": "^7.1.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

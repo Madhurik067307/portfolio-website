@@ -1,18 +1,17 @@
 "use client";
 
+import { Experience } from "@/components/experience/Experience";
 import Introduction from "@/components/introduction/Introduction";
 import PersonalInformation from "@/components/personal-information/PersonalInformation";
-import RepositoryComponent, {
-  Repository,
-} from "@/components/repository-component/RepositoryComponent";
+import Repository, {
+  RepositoryProps,
+} from "@/components/repository-component/Repository";
 import ThemeToggleButton from "@/components/theme-toggle-button/ThemeToggleButton";
 import { Text, useMantineColorScheme } from "@mantine/core";
 import classes from "./page.module.css";
 
 export default function Home() {
-  const { setColorScheme, clearColorScheme } = useMantineColorScheme();
-
-  const repositories: Repository[] = [
+  const repositories: RepositoryProps[] = [
     {
       id: "1",
       title: "Brain tumors classification",
@@ -24,7 +23,7 @@ export default function Home() {
     {
       id: "2",
       title: "Internship Recommender",
-      githubLink: "",
+      githubLink: "https://github.com/chuongtran01/internship-recommender",
       technologies: "Python, NLTK, Selenium, BeautifulSoup",
       description:
         "Applied NLP techniques to build recommendation system that matches opportunities with user resumes.",
@@ -63,14 +62,10 @@ export default function Home() {
             <Introduction />
           </div>
           <div className={classes.bottom_right_repo_container}>
-            <Text className={classes.bottom_right_repo_title} fz={"sm"}>
-              Pinned Repositories
-            </Text>
-            <div className={classes.bottom_right_repo}>
-              {repositories.map((repo) => {
-                return <RepositoryComponent key={repo.id} repository={repo} />;
-              })}
-            </div>
+            <Repository repositories={repositories} />
+          </div>
+          <div className={classes.bottom_right_experience_container}>
+            <Experience />
           </div>
         </div>
       </div>
