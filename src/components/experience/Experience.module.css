@@ -1,5 +1,5 @@
 .card {
-  height: rem(450px);
+  height: rem(400px);
   display: flex;
   flex-direction: row;
   gap: 0.5rem;

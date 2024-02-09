@@ -77,7 +77,7 @@ const data = [
     position: "Software Engineer Intern",
     description:
       "Developed and expanded features, involving both front-end and back-end tasks which resulted in better user experience.",
-    skills: ["C#", "ASP.NET", "Microsoft SQL", "HTML", "CSS"],
+    skills: ["C#", "ASP.NET", "Microsoft SQL Server", "HTML", "CSS"],
   },
 ];
 
