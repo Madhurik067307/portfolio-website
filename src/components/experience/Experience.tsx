@@ -85,8 +85,9 @@ export function Experience() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (
-    <Carousel.Slide key={item.id}>
+    <Carousel.Slide>
       <Card
+        key={item.id}
         timeFrame={item.timeFrame}
         company={item.company}
         position={item.position}
