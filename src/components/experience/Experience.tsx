@@ -15,7 +15,7 @@ interface CardProps {
   company: string;
   position: string;
   description: string;
-  skills: string[];
+  skills: any[];
 }
 
 function Card({
@@ -42,7 +42,7 @@ function Card({
         <div className={classes.skills}>
           {skills.map((skill) => (
             <Button variant="light" radius="xl" size="sm">
-              {skill}
+              {skill.name}
             </Button>
           ))}
         </div>
@@ -59,7 +59,24 @@ const data = [
     position: "Software Developer",
     description:
       "Worked with cross-functional teams to develop dynamic and responsive user interfaces, effectively translating designs into high-quality functional web components.",
-    skills: ["Angular", "TypeScript", "HTML", "CSS"],
+    skills: [
+      {
+        id: "1",
+        name: "Angular",
+      },
+      {
+        id: "2",
+        name: "TypeScript",
+      },
+      {
+        id: "3",
+        name: "HTML",
+      },
+      {
+        id: "3",
+        name: "CSS",
+      },
+    ],
   },
   {
     id: "2",
@@ -68,7 +85,12 @@ const data = [
     position: "Teaching Assistant",
     description:
       "Worked with professor to design and execute programming activities and assessments, and facilitated lab sessions, emphasizing practical application of data structures and algorithms in C++.",
-    skills: ["C++"],
+    skills: [
+      {
+        id: "5",
+        name: "C++",
+      },
+    ],
   },
   {
     id: "3",
@@ -77,7 +99,28 @@ const data = [
     position: "Software Engineer Intern",
     description:
       "Developed and expanded features, involving both front-end and back-end tasks which resulted in better user experience.",
-    skills: ["C#", "ASP.NET", "Microsoft SQL Server", "HTML", "CSS"],
+    skills: [
+      {
+        id: "7",
+        name: "C#",
+      },
+      {
+        id: "8",
+        name: "ASP.NET",
+      },
+      {
+        id: "9",
+        name: "Microsoft SQL Server",
+      },
+      {
+        id: "10",
+        name: "HTML",
+      },
+      {
+        id: "11",
+        name: "CSS",
+      },
+    ],
   },
 ];
 
@@ -85,9 +128,8 @@ export function Experience() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (
-    <Carousel.Slide>
+    <Carousel.Slide key={item.id}>
       <Card
-        key={item.id}
         timeFrame={item.timeFrame}
         company={item.company}
         position={item.position}
