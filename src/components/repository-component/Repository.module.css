@@ -15,6 +15,10 @@
     flex-direction: column-reverse;
     padding: var(--mantine-spacing-lg);
   }
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+  }
 }
 
 .introduction {
