@@ -16,6 +16,7 @@ export default function Home() {
       id: "1",
       title: "Brain tumors classification",
       githubLink: "https://github.com/chuongtran01/brain-tumors-classification",
+      dotColor: "orange",
       technologies: "Python, TensorFlow, NumPy",
       description:
         "Categorized brain tumors by developing and training machine learning model leveraging ResNet 50 architecture.",
@@ -24,24 +25,27 @@ export default function Home() {
       id: "2",
       title: "Internship Recommender",
       githubLink: "https://github.com/chuongtran01/internship-recommender",
+      dotColor: "orange",
       technologies: "Python, NLTK, Selenium, BeautifulSoup",
       description:
         "Applied NLP techniques to build recommendation system that matches opportunities with user resumes.",
     },
 
     {
-      id: "1",
-      title: "Brain tumors classification",
+      id: "3",
+      title: "Amusement Park Website",
       githubLink: "",
-      technologies: "Python, TensorFlow, NumPy",
+      dotColor: "green",
+      technologies: "C#, ASP.NET Core, MySQL, React, HTML, CSS, Azure",
       description:
-        "Categorized brain tumors by developing and training machine learning model leveraging ResNet 50 architecture.",
+        "Led database design, SQL queries, RESTful API endpoints development for amusement park management.",
     },
 
     {
       id: "1",
       title: "Brain tumors classification",
-      githubLink: "",
+      githubLink: "https://github.com/chuongtran01/Park-Database",
+      dotColor: "green",
       technologies: "Python, TensorFlow, NumPy",
       description:
         "Categorized brain tumors by developing and training machine learning model leveraging ResNet 50 architecture.",

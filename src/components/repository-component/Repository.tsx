@@ -7,6 +7,7 @@ import { IconBookDownload, IconCircleFilled } from "@tabler/icons-react";
 export interface RepositoryProps {
   id: string;
   title: string;
+  dotColor: string;
   githubLink: string;
   technologies: string;
   description: string;
@@ -20,6 +21,7 @@ const RepositoryComponent = ({
   id,
   title,
   githubLink,
+  dotColor,
   technologies,
   description,
 }: RepositoryProps) => {
@@ -35,9 +37,9 @@ const RepositoryComponent = ({
         <div className={classes.technologies_container}>
           <IconCircleFilled
             size={"15px"}
-            className={classes.technologies_circle}
+            className={classes["technologies_circle_" + dotColor]}
           />
-          <Text className={classes.technologies} fz={"sm"}>
+          <Text className={classes.technologies} fz={"xs"}>
             {technologies}
           </Text>
         </div>
@@ -63,6 +65,7 @@ export default function Repository({ repositories }: RepositoryComponentProps) {
             technologies={repo.technologies}
             githubLink={repo.githubLink}
             description={repo.description}
+            dotColor={repo.dotColor}
           />
         ))}
       </div>

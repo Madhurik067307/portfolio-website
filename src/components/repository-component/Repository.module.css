@@ -73,8 +73,12 @@
   margin: 1rem 0;
 }
 
-.technologies_circle {
+.technologies_circle_orange {
   color: orangered;
+}
+
+.technologies_circle_green {
+  color: var(--mantine-color-teal-9);
 }
 
 .connect_title_container {
