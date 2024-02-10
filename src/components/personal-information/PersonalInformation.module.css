@@ -3,6 +3,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: row;
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+  }
 }
 
 .github_container {
@@ -18,6 +26,30 @@
 .github {
   text-decoration: none;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-gray-5));
+}
+
+.avatar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    align-items: flex-start;
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    align-items: flex-start;
+  }
 }
 
 .github:hover {
@@ -53,6 +85,10 @@
     var(--mantine-color-gray-3),
     var(--mantine-color-gray-6)
   );
+
+  @media (max-width: $mantine-breakpoint-md) {
+    display: none;
+  }
 }
 
 .information {
@@ -63,6 +99,10 @@
   gap: 0.5rem;
   width: 70%;
   margin-top: 2rem;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 100%;
+  }
 }
 
 .information_element {

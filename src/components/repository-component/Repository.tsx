@@ -37,12 +37,12 @@ const RepositoryComponent = ({
             size={"15px"}
             className={classes.technologies_circle}
           />
-          <Text className={classes.technologies} fz={"xs"}>
+          <Text className={classes.technologies} fz={"sm"}>
             {technologies}
           </Text>
         </div>
 
-        <Text fz="xs">{description}</Text>
+        <Text fz="sm">{description}</Text>
       </div>
     </div>
   );

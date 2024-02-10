@@ -22,7 +22,7 @@
 }
 
 .body {
-  padding-right: calc(var(--mantine-spacing-md) * 4);
+  /* padding-right: calc(var(--mantine-spacing-md) * 4); */
 
   @media (max-width: $mantine-breakpoint-sm) {
     padding-right: 0;

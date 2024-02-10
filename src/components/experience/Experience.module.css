@@ -1,10 +1,18 @@
 .card {
-  height: rem(400px);
+  height: rem(300px);
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  border: 0.5px solid
-    light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  border: rem(1px) solid
+    light-dark(var(--mantine-color-gray-3), var(--mantine-color-gray-6));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    height: rem(450px);
+  }
+
+  @media (max-width: $mantine-breakpoint-md) {
+    height: rem(450px);
+  }
 }
 
 .left {
@@ -20,6 +28,7 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .right {
@@ -29,11 +38,8 @@
   justify-content: space-between;
 }
 
-.title {
+.right_title {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  line-height: 1.2;
-  font-size: rem(32px);
-  margin-top: var(--mantine-spacing-xs);
 }
 
 .carousel_container {
@@ -52,7 +58,7 @@
 }
 
 .description {
-  margin-top: 2rem;
+  margin-top: var(--mantine-spacing-lg);
 }
 
 .carousel_title {

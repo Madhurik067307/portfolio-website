@@ -34,9 +34,15 @@ function Card({
       </div>
       <div className={classes.right}>
         <div>
-          <Title order={4}>{company}</Title>
-          <Title order={5}>{position}</Title>
-          <Text className={classes.description}>{description}</Text>
+          <Title className={classes.right_title} order={5}>
+            {company}
+          </Title>
+          <Title className={classes.right_title} order={6}>
+            {position}
+          </Title>
+          <Text fz={"sm"} className={classes.description}>
+            {description}
+          </Text>
         </div>
 
         <div className={classes.skills}>

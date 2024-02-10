@@ -21,14 +21,25 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: column;
+  }
 }
 
 .bottom_left {
   width: 30%;
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+  }
 }
 
 .bottom_right {
   width: 70%;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+  }
 }
 
 .bottom_right_repo_container {
