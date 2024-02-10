@@ -16,7 +16,7 @@
     padding: var(--mantine-spacing-lg);
   }
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: $mantine-breakpoint-lg) {
     width: 100%;
   }
 }
