@@ -7,13 +7,17 @@
     var(--mantine-color-white),
     var(--mantine-color-dark-8)
   );
-  margin-top: 2rem;
   border: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-gray-6));
 
   @media (max-width: $mantine-breakpoint-sm) {
     flex-direction: column-reverse;
     padding: var(--mantine-spacing-lg);
+    margin-top: 1rem;
+  }
+
+  @media (max-width: $mantine-breakpoint-md) {
+    margin-top: 1rem;
   }
 }
 

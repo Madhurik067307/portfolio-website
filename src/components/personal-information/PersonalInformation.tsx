@@ -1,4 +1,4 @@
-import { Avatar, Button, Text } from "@mantine/core";
+import { Avatar, Button, Text, Title } from "@mantine/core";
 import {
   IconBrandGithub,
   IconMapPin,
@@ -18,12 +18,10 @@ export default function PersonalInformation() {
   return (
     <div className={classes.container}>
       <div className={classes.avatar}>
-        <Avatar
-          src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png"
-          size={220}
-          radius={220}
-          mx="auto"
-        />
+        <div className={classes.name}>
+          <Title>Chuong Tran</Title>
+        </div>
+
         <div className={classes.github_container}>
           <IconBrandGithub
             className={classes.icon}

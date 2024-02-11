@@ -19,8 +19,12 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   gap: 10px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 100%;
+  }
 }
 
 .github {
@@ -34,6 +38,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.name {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 100%;
+  }
 }
 
 .information_container {
