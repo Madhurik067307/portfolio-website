@@ -60,7 +60,7 @@ function Card({
 const data = [
   {
     id: "1",
-    timeFrame: "May 2023 - PRESENT",
+    timeFrame: "Jan 2023 - PRESENT",
     company: "Infodat",
     position: "Software Developer",
     description:
@@ -79,13 +79,43 @@ const data = [
         name: "HTML",
       },
       {
-        id: "3",
+        id: "4",
         name: "CSS",
       },
     ],
   },
   {
     id: "2",
+    timeFrame: "May 2023 - Dec 2023",
+    company: "Infodat",
+    position: "Software Developer Intern",
+    description:
+      "Enhanced the efficiency of internal assessment process through the development of specialized web application.",
+    skills: [
+      {
+        id: "1",
+        name: "React",
+      },
+      {
+        id: "2",
+        name: "TypeScript",
+      },
+      {
+        id: "3",
+        name: "HTML",
+      },
+      {
+        id: "4",
+        name: "CSS",
+      },
+      {
+        id: "5",
+        name: "Jest",
+      },
+    ],
+  },
+  {
+    id: "3",
     timeFrame: "Aug 2022 - May 2023",
     company: "University of Houston",
     position: "Teaching Assistant",
@@ -99,7 +129,7 @@ const data = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     timeFrame: "Dec 2022 - Apr 2023",
     company: "Mainbridge Health Partners",
     position: "Software Engineer Intern",

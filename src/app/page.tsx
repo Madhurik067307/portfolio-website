@@ -40,16 +40,6 @@ export default function Home() {
       description:
         "Led database design, SQL queries, RESTful API endpoints development for amusement park management.",
     },
-
-    {
-      id: "1",
-      title: "Brain tumors classification",
-      githubLink: "https://github.com/chuongtran01/Park-Database",
-      dotColor: "green",
-      technologies: "Python, TensorFlow, NumPy",
-      description:
-        "Categorized brain tumors by developing and training machine learning model leveraging ResNet 50 architecture.",
-    },
   ];
 
   return (
@@ -65,11 +55,11 @@ export default function Home() {
           <div className={classes.bottom_right_introduction}>
             <Introduction />
           </div>
-          <div className={classes.bottom_right_repo_container}>
-            <Repository repositories={repositories} />
-          </div>
           <div className={classes.bottom_right_experience_container}>
             <Experience />
+          </div>
+          <div className={classes.bottom_right_repo_container}>
+            <Repository repositories={repositories} />
           </div>
         </div>
       </div>

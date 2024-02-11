@@ -10,6 +10,11 @@ import React from "react";
 import classes from "./PersonalInformation.module.css";
 
 export default function PersonalInformation() {
+  const openInNewTab = (url: string) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.avatar}>
@@ -41,6 +46,7 @@ export default function PersonalInformation() {
             mt="xl"
             size="md"
             variant="default"
+            onClick={() => openInNewTab("ChuongTran_Resume.pdf")}
           >
             View Resume
           </Button>
