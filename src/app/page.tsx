@@ -11,37 +11,6 @@ import { Text, useMantineColorScheme } from "@mantine/core";
 import classes from "./page.module.css";
 
 export default function Home() {
-  const repositories: RepositoryProps[] = [
-    {
-      id: "1",
-      title: "Brain tumors classification",
-      githubLink: "https://github.com/chuongtran01/brain-tumors-classification",
-      dotColor: "orange",
-      technologies: "Python, TensorFlow, NumPy",
-      description:
-        "Categorized brain tumors by developing and training machine learning model leveraging ResNet 50 architecture.",
-    },
-    {
-      id: "2",
-      title: "Internship Recommender",
-      githubLink: "https://github.com/chuongtran01/internship-recommender",
-      dotColor: "orange",
-      technologies: "Python, NLTK, Selenium, BeautifulSoup",
-      description:
-        "Applied NLP techniques to build recommendation system that matches opportunities with user resumes.",
-    },
-
-    {
-      id: "3",
-      title: "Amusement Park Website",
-      githubLink: "",
-      dotColor: "green",
-      technologies: "C#, ASP.NET Core, MySQL, React, HTML, CSS, Azure",
-      description:
-        "Led database design, SQL queries, RESTful API endpoints development for amusement park management.",
-    },
-  ];
-
   return (
     <div className={classes.container}>
       <div className={classes.top}>
@@ -59,7 +28,7 @@ export default function Home() {
             <Experience />
           </div>
           <div className={classes.bottom_right_repo_container}>
-            <Repository repositories={repositories} />
+            <Repository />
           </div>
         </div>
       </div>
