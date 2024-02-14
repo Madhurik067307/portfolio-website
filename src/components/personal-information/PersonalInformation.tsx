@@ -1,4 +1,4 @@
-import { Avatar, Button, Text, Title } from "@mantine/core";
+import { Button, Text, Title } from "@mantine/core";
 import {
   IconBrandGithub,
   IconMapPin,

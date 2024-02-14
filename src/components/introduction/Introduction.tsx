@@ -1,11 +1,7 @@
-import { Text, Title } from "@mantine/core";
+import { Text } from "@mantine/core";
 import React from "react";
 import classes from "./Introduction.module.css";
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconMail,
-} from "@tabler/icons-react";
+import { IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 
 export default function Introduction() {
   const skills = {

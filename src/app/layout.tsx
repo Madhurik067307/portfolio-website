@@ -4,6 +4,7 @@ import "@mantine/carousel/styles.css";
 import "@mantine/core/styles.css";
 import "@mantine/core/styles.layer.css";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Chuong Tran - Portfolio Webiste",
@@ -21,7 +22,10 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider defaultColorScheme="light">{children}</MantineProvider>
+        <MantineProvider defaultColorScheme="light">
+          {children}
+          <Analytics />
+        </MantineProvider>
       </body>
     </html>
   );
