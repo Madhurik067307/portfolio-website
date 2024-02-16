@@ -69,8 +69,8 @@ export default function Repository() {
 
     {
       id: "3",
-      title: "Amusement Park Website",
-      githubLink: "",
+      title: "Amusement Park Management - API",
+      githubLink: "https://github.com/chuongtran01/Park-Database",
       dotColor: "green",
       technologies: "C#, ASP.NET Core, MySQL, React, HTML, CSS, Azure",
       description:
